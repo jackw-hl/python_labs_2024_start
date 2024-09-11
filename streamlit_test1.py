@@ -9,8 +9,10 @@ import streamlit as st
 # Initialize session state for storing past inputs
 if 'text_history' not in st.session_state:
  st.session_state.text_history = []
+ 
 # Create a text input box
 text_input = st.text_input("Enter some text:")
+
 # Create a submit button
 submit_button = st.button("Submit")
 if submit_button:
